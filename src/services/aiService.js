@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const GEMINI_PRIMARY_KEY = 'AIzaSyA95j3gkYHdFsZMQPzAOqw9YpOsJI3dRUg';
-const GEMINI_FALLBACK_KEY = 'AIzaSyBkr3BCwJ1HnkkkzlCs2KEELDgvVaElBa8';
-const OPENROUTER_PRIMARY_KEY = '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';
-const OPENROUTER_FALLBACK_KEY = 'sk-or-v1-9be906a1a6db40cbb89bd29e0d8649e623557e2432bafed44370cfa8e61cf8fce';
+const GEMINI_PRIMARY_KEY = import.meta.env.VITE_GEMINI_PRIMARY_KEY;
+const GEMINI_FALLBACK_KEY = import.meta.env.VITE_GEMINI_FALLBACK_KEY;
+const OPENROUTER_PRIMARY_KEY = import.meta.env.VITE_OPENROUTER_PRIMARY_KEY;
+const OPENROUTER_FALLBACK_KEY = import.meta.env.VITE_OPENROUTER_FALLBACK_KEY;
 
 const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 const OPENROUTER_API_URL = 'https://openrouter.ai/api/v1/chat/completions';
